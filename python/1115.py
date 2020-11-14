@@ -1,7 +1,13 @@
 answer = 0
 def solution(scoville, K):
-    
-    if len(scoville) <= 1:
-        return -1
+    scovilleSorted = sorted(scoville)
+    # if len(scoville) <= 1:
+    #     return -1
+    # for i in range(len(scoville)):
+    #     if scoville[i] < K:
+            
+    return scovilleSorted
 
-    return answer
+scoville = [1, 2, 3, 9, 10, 12]
+K = 7
+print(solution(scoville, K))
