@@ -3,6 +3,7 @@ from collections import deque
 
 def solution(jobs):
     tasks = deque(sorted([(x[1], x[0]) for x in jobs], key=lambda x: (x[1], x[0])))
+    print(tasks)
     q = []
     heapq.heappush(q, tasks.popleft())
     current_time, total_response_time = 0, 0
